@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalo's Carnes & Carcajadas</title>
+    <link href="./fuentes/CinzelDecorative-Black.otf" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="logo">Lalo's Carnes & Carcajadas</div>
+        <nav>
+            <div class="menu-icon" id="menu-icon">&#9776;</div> <!-- Ícono de hamburguesa -->
+            <ul class="nav-menu">
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Carta</a></li>
+                <li><a href="#">Eventos privados</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Carrusel -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="./imagenes/interior.jpg" alt="interior">
+            <img src="./imagenes/carne1.jpg" alt="carnita">
+            <img src="./imagenes/chef.jpg" alt="chef">
+            <img src="./imagenes/carnia2.jpg" alt="carnit2">
+        </div>
+
+        <!-- Botones -->
+        <button class="prev">&larr;</button>
+        <button class="next">&rarr;</button>
+
+        <!-- Indicadores -->
+        <div class="indicators">
+            <div class="indicator active"></div>
+            <div class="indicator"></div>
+            <div class="indicator"></div>
+        </div>
+    </div>
+
+    <!--Carrusel de tarjetas-->
+    <section class="event-carousel-container">
+        <h2>Próximos Eventos</h2>
+        <div class="event-carousel">
+            <div class="event-track">
+                <div class="event-card">
+                    <img src="./imagenes/corte.jpg" alt="Evento 1">
+                    <p class="event-date">Viernes 21 de febrero - 8:00 PM</p>
+                    <hr class="event-divider">
+                    <h3 class="event-title">Noche de Cortes Premium</h3>
+                    <button class="btn-gold">Más información</button>
+                    <button class="btn-white">Ver menú</button>
+                </div>
+                <div class="event-card">
+                    <img src="./imagenes/vinosteak.jpg" alt="Evento 2">
+                    <p class="event-date">Sábado 22 de febrero - 7:30 PM</p>
+                    <hr class="event-divider">
+                    <h3 class="event-title">Maridaje de Vinos & Steak</h3>
+                    <button class="btn-gold">Más información</button>
+                    <button class="btn-white">Ver menú</button>
+                </div>
+                <div class="event-card">
+                    <img src="./imagenes/parrilla.jpg" alt="Evento 3">
+                    <p class="event-date">Jueves 27 de febrero - 6:00 PM</p>
+                    <hr class="event-divider">
+                    <h3 class="event-title">Parrillada Exclusiva</h3>
+                    <button class="btn-gold">Más información</button>
+                    <button class="btn-white">Ver menú</button>
+                </div>
+                <div class="event-card">
+                    <img src="./imagenes/brunch.jpg" alt="Evento 4">
+                    <p class="event-date">Domingo 8 de marzo - 1:00 PM</p>
+                    <hr class="event-divider">
+                    <h3 class="event-title">Brunch al Carbón</h3>
+                    <button class="btn-gold">Más información</button>
+                    <button class="btn-white">Ver menú</button>
+                </div>
+            </div>
+        </div>
+        <div class="event-indicators">
+            <span class="event-indicator active" data-index="0"></span>
+            <span class="event-indicator" data-index="1"></span>
+        </div>
+    </section>
+
+ <!-- Sección de imágenes con texto -->
+<section class="image-text-section">
+    <div class="image-text-block">
+        <div class="text-content">
+            <h2>Carta</h2>
+            <p>Bienvenido a un festín para los sentidos. Nuestra carta está diseñada para deleitarte con los más exquisitos cortes de carne, preparados a la perfección y acompañados de guarniciones cuidadosamente seleccionadas. Cada plato cuenta una historia de sabor, tradición y pasión por la buena cocina.</p>
+            <p>Explora nuestras opciones y descubre la excelencia en cada bocado.</p>
+            <a href="carta.pdf" class="btn-outline">Ver carta</a>
+        </div>
+        <div class="image-content">
+            <img src="./imagenes/carta.jpg" alt="Carta">
+        </div>
+    </div>
+
+    <div class="image-text-block reverse">
+        <div class="image-content">
+            <img src="./imagenes/catering.jpg" alt="Catering">
+        </div>
+        <div class="text-content">
+            <h2>Catering</h2>
+            <p>Transforma tus eventos en experiencias memorables con nuestro servicio de catering premium. Nos encargamos de llevar lo mejor de nuestra parrilla a tu celebración, con menús personalizados que se adaptan a cualquier ocasión especial.</p>
+            <p>Desde reuniones íntimas hasta grandes celebraciones, nos aseguramos de que cada detalle refleje nuestra pasión por la calidad y el buen servicio.</p>
+            <a href="catering.html" class="btn-outline">Ver opciones</a>
+        </div>
+    </div>
+
+    <div class="image-text-block">
+        <div class="text-content">
+            <h2>Reservas</h2>
+            <p>Haz de tu visita un momento inolvidable. Te invitamos a reservar tu mesa y disfrutar de una velada excepcional, rodeado de un ambiente acogedor, la mejor atención y, por supuesto, los cortes más selectos a la parrilla.</p>
+            <p><strong>Horario de atención:</strong><br>
+            Lunes a Viernes: 12:00 PM - 11:00 PM<br>
+            Sábados y Domingos: 1:00 PM - 12:00 AM</p>
+            <a href="#formulario" class="btn-outline" id="scroll-btn">Consulte aquí</a>
+        </div>
+        <div class="image-content">
+            <img src="./imagenes/jardin.jpg" alt="Reservas">
+        </div>
+    </div>
+</section>
+
+<!-- Sección del formulario -->
+<section class="form-section" id="formulario">
+    <h2>Formulario</h2>
+    <br>
+    <form class="contact-form">
+        <label>Tipo de consulta:</label>
+        <div class="radio-group">
+            <label><input type="radio" name="consulta" value="reserva"> Reserva</label>
+            <label><input type="radio" name="consulta" value="catering"> Catering</label>
+        </div>
+
+        <div class="input-group">
+            <input type="text" name="nombre" placeholder="Nombres">
+            <input type="text" name="apellido" placeholder="Apellidos">
+        </div>
+
+        <input type="email" name="correo" placeholder="Correo electrónico">
+        <textarea name="mensaje" placeholder="Ingrese los detalles de su consulta aquí."></textarea>
+
+        <button type="submit">Enviar</button>
+    </form>
+    <p class="form-message">*Las consultas serán respondidas a la brevedad posible, no olvide revisar su correo electrónico, estimado comensal.</p>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <h2 class="footer-title">Lalo's Carnes & Carcajadas</h2>
+
+    <div class="footer-content">
+        <!-- Sección "Sobre el steakhouse" -->
+        <div class="footer-section">
+            <h3>Sobre el steakhouse</h3>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Carta</a></li>
+                <li><a href="#">Eventos privados</a></li>
+                <li><a href="#">Reservas</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- Sección "Ayuda y términos legales" -->
+        <div class="footer-section">
+            <h3>Ayuda y términos legales</h3>
+            <ul>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Política de devoluciones</a></li>
+            </ul>
+        </div>
+
+        <!-- Sección de ubicación con mapa -->
+        <div class="footer-section">
+            <h3>Av. Los Asadores 123, Ciudad del Sabor</h3>
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.google.com/?q=Plaza%20Mayor%20de%20Lima&output=embed"
+                    width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de redes sociales y derechos reservados -->
+    <div class="footer-bottom">
+        <div class="social-icons">
+            <a href="#"><img src="./imagenes/instagram_4401407.png" alt="Instagram"></a>
+            <a href="#"><img src="./imagenes/twitter_1051331.png" alt="Twitter"></a>
+            <a href="#"><img src="./imagenes/facebook_3991628.png" alt="Facebook"></a>
+        </div>
+        <p class="copyright">© 2025 Lalo's Carnes & Carcajadas. Todos los derechos reservados.</p>
+    </div>
+</footer>
+<script src="script.js" defer></script>
+</body>
+</html>
